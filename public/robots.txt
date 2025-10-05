@@ -1,0 +1,40 @@
+# robots.txt for PetHeaven.top
+# Last updated: 2024-01-15
+
+User-agent: *
+Allow: /
+
+# Sitemap location
+Sitemap: https://petheaven.top/sitemap.xml
+
+# Important pages (higher priority)
+Allow: /$
+Allow: /about$
+Allow: /contact$
+Allow: /blog$
+
+# User authentication pages (lower priority)
+Disallow: /login$
+Disallow: /register$
+Disallow: /auth/
+Disallow: /api/
+
+# Admin and debug pages (block completely)
+Disallow: /debug-*
+Disallow: /admin/
+Disallow: /private/
+Disallow: /server-*
+
+# Static assets (allow but low priority)
+Allow: /_next/static/
+Allow: /public/
+Allow: /images/
+Allow: /favicon.ico
+Allow: /icon.png
+
+# Crawl delay to be respectful
+Crawl-delay: 1
+
+# Contact information for web crawlers
+# If you have questions about crawling this site, please contact:
+# Contact: admin@petheaven.top
