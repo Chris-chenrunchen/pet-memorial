@@ -52,7 +52,7 @@ export async function generateMetadata({ params }: BlogPostPageProps): Promise<M
       creator: post.author
     },
     alternates: {
-      canonical: post.canonicalUrl || `/blog/${post.slug}`
+      canonical: `https://petheaven.top${post.canonicalUrl || `/blog/${post.slug}`}`
     },
     robots: {
       index: true,

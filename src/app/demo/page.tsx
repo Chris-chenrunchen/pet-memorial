@@ -2,6 +2,15 @@ import { PetShowcaseSection } from "@/components/pet-showcase-section"
 import { Navigation } from "@/components/navigation"
 import { Footer } from "@/components/footer"
 import { Heart } from "lucide-react"
+import { Metadata } from "next"
+
+export const metadata: Metadata = {
+  title: "Pet Memorial Examples - Pet Heaven",
+  description: "Browse beautiful pet memorial examples to get inspiration for creating your own tribute.",
+  alternates: {
+    canonical: "https://petheaven.top/demo"
+  }
+}
 
 export default function DemoPage() {
   return (

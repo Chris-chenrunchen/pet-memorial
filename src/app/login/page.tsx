@@ -5,6 +5,9 @@ import { Footer } from "@/components/footer"
 export const metadata: Metadata = {
   title: "Login - Pet Heaven",
   description: "Login to your Pet Heaven account",
+  alternates: {
+    canonical: "https://petheaven.top/login"
+  }
 }
 
 export default function LoginPage() {

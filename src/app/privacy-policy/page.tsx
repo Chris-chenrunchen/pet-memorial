@@ -1,4 +1,13 @@
 import Link from "next/link"
+import { Metadata } from "next"
+
+export const metadata: Metadata = {
+  title: "Privacy Policy - Pet Heaven",
+  description: "Learn how Pet Heaven protects your privacy and handles your personal information.",
+  alternates: {
+    canonical: "https://petheaven.top/privacy-policy"
+  }
+}
 
 export default function PrivacyPolicy() {
   return (

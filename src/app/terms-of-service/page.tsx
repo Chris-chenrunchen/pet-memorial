@@ -1,4 +1,13 @@
 import Link from "next/link"
+import { Metadata } from "next"
+
+export const metadata: Metadata = {
+  title: "Terms of Service - Pet Heaven",
+  description: "Read the terms of service for using Pet Heaven pet memorial services.",
+  alternates: {
+    canonical: "https://petheaven.top/terms-of-service"
+  }
+}
 
 export default function TermsOfService() {
   return (

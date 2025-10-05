@@ -6,6 +6,9 @@ import { Footer } from "@/components/footer"
 export const metadata: Metadata = {
   title: 'Register - Pet Memorial',
   description: 'Create your account to start creating beautiful pet memorials.',
+  alternates: {
+    canonical: "https://petheaven.top/register"
+  }
 }
 
 export default function RegisterPage() {

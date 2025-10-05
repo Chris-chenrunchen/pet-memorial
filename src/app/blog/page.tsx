@@ -33,7 +33,7 @@ export const metadata: Metadata = {
     images: ['/peaceful-sunset-meadow-with-soft-golden-light-filt.jpg']
   },
   alternates: {
-    canonical: '/blog'
+    canonical: 'https://petheaven.top/blog'
   },
   robots: {
     index: true,
