@@ -36,7 +36,8 @@ export default function RootLayout({
         <Analytics />
         <GoogleAnalytics gaId={process.env.NEXT_PUBLIC_GA_ID || ''} />
         <Script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8704857153928088"
-     crossOrigin="anonymous"></Script>
+          strategy="beforeInteractive" 
+          crossOrigin="anonymous"></Script>
       </body>
     </html>
   )
