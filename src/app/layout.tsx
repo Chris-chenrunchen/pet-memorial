@@ -8,6 +8,7 @@ import { Suspense } from "react"
 import { AuthProvider } from "@/components/auth-provider"
 import "./globals.css"
 import { GoogleAnalytics } from '@next/third-parties/google'
+import Script from 'next/script'
 
 const playfair = Playfair_Display({
   subsets: ["latin"],
@@ -34,6 +35,8 @@ export default function RootLayout({
         </AuthProvider>
         <Analytics />
         <GoogleAnalytics gaId={process.env.NEXT_PUBLIC_GA_ID || ''} />
+        <Script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8704857153928088"
+     crossOrigin="anonymous"></Script>
       </body>
     </html>
   )
