@@ -7,6 +7,7 @@ import { Analytics } from "@vercel/analytics/next"
 import { Suspense } from "react"
 import { AuthProvider } from "@/components/auth-provider"
 import "./globals.css"
+import { GoogleAnalytics } from '@next/third-parties/google'
 import Script from 'next/script'
 
 const playfair = Playfair_Display({
@@ -28,28 +29,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`font-sans ${GeistSans.variable} ${GeistMono.variable} ${playfair.variable}`}>
-        <AuthProvider>
-          <Suspense fallback={null}>{children}</Suspense>
-        </AuthProvider>
-        <Analytics />
-        <Script
-          async
-          src={`https://www.googletagmanager.com/gtag/js?id=${process.env.NEXT_PUBLIC_GA_ID || ''}`}
-          strategy="beforeInteractive"
-        />
-        <Script
-          id="google-analytics-script-init"
-          strategy="beforeInteractive"
-          dangerouslySetInnerHTML={{
-            __html: `
-            window.dataLayer = window.dataLayer || [];
-            function gtag(){dataLayer.push(arguments);}
-            gtag('js', new Date());
-            gtag('config', '${process.env.NEXT_PUBLIC_GA_ID || ''}');
-            `,  
-          }}
-        />
+      <head>
         <Script
           id="adsense-script"
           async
@@ -57,6 +37,14 @@ export default function RootLayout({
           crossOrigin="anonymous"
           strategy="beforeInteractive"
         />
+      </head>
+      <body className={`font-sans ${GeistSans.variable} ${GeistMono.variable} ${playfair.variable}`}>
+        <AuthProvider>
+          <Suspense fallback={null}>{children}</Suspense>
+        </AuthProvider>
+        <Analytics />
+        <GoogleAnalytics gaId={process.env.NEXT_PUBLIC_GA_ID || ''} />
+        
       </body>
     </html>
   )
