@@ -30,13 +30,8 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
-        <Script
-          id="adsense-script"
-          async
-          src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8704857153928088"
-          crossOrigin="anonymous"
-          strategy="beforeInteractive"
-        />
+        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8704857153928088"
+        crossOrigin="anonymous"></script>
       </head>
       <body className={`font-sans ${GeistSans.variable} ${GeistMono.variable} ${playfair.variable}`}>
         <AuthProvider>
