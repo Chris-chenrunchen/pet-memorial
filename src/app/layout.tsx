@@ -40,8 +40,7 @@ export default function RootLayout({
           async
           src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8704857153928088"
           crossOrigin="anonymous"
-          // 使用 beforeInteractive 确保它被注入到初始 HTML 源码中
-          strategy="beforeInteractive" 
+          strategy="beforeInteractive"
         />
       </body>
     </html>
