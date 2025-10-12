@@ -164,29 +164,62 @@
   --color-sidebar-ring: var(--sidebar-ring);
 }
 
-@layer base {
-  * {
-    border-color: var(--border);
-    outline: 2px solid transparent;
-    outline-offset: 2px;
-  }
-  body {
-    background-color: var(--background);
-    color: var(--foreground);
-  }
-  
-  /* Blog content styling - add spacing for H2 headings */
-  .prose h2 {
-    margin-top: 2rem;    /* 8 units in Tailwind */
-    margin-bottom: 1rem; /* 4 units in Tailwind */
-  }
-  
-  .prose h2:first-child {
-    margin-top: 0;
-  }
-  
-  /* Ensure consistent spacing after paragraphs before H2 */
-  .prose p + h2 {
-    margin-top: 2rem; /* 8 units in Tailwind */
-  }
+/* Base styles - Tailwind CSS v4 compatible syntax */
+* {
+  border-color: var(--border);
+  outline: 2px solid transparent;
+  outline-offset: 2px;
+}
+body {
+  background-color: var(--background);
+  color: var(--foreground);
+}
+
+/* Blog content styling - complete heading styles for prose container */
+.prose h1 {
+  font-size: 2.25rem; /* 36px */
+  font-weight: 700;
+  line-height: 1.2;
+  color: var(--foreground);
+  margin-top: 0;
+  margin-bottom: 1.5rem;
+}
+
+.prose h2 {
+  font-size: 1.875rem; /* 30px */
+  font-weight: 600;
+  line-height: 1.25;
+  color: var(--foreground);
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+}
+
+.prose h2:first-child {
+  margin-top: 0;
+}
+
+.prose h3 {
+  font-size: 1.5rem; /* 24px */
+  font-weight: 600;
+  line-height: 1.3;
+  color: var(--foreground);
+  margin-top: 1.5rem;
+  margin-bottom: 0.75rem;
+}
+
+.prose h4 {
+  font-size: 1.25rem; /* 20px */
+  font-weight: 600;
+  line-height: 1.35;
+  color: var(--foreground);
+  margin-top: 1.25rem;
+  margin-bottom: 0.5rem;
+}
+
+/* Ensure consistent spacing after paragraphs before headings */
+.prose p + h1,
+.prose p + h2,
+.prose p + h3,
+.prose p + h4 {
+  margin-top: 2rem;
 }
