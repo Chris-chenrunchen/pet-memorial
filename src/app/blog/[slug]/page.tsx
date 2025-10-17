@@ -7,6 +7,7 @@ import { getBlogPostBySlug, getBlogPosts } from "@/lib/blog"
 import { Metadata } from "next"
 import { CTASection } from "@/components/cta-section"
 import Link from "next/link"
+import { redirect } from "next/navigation"
 
 interface BlogPostPageProps {
   params: {
@@ -74,16 +75,9 @@ export default function BlogPostPage({ params }: BlogPostPageProps) {
   const allPosts = getBlogPosts()
   const otherPosts = allPosts.filter(p => p.slug !== params.slug).slice(0, 5) // 获取5篇其他文章
   
+  // 如果文章不存在，重定向到博客列表页面
   if (!post) {
-    return (
-      <main className="min-h-screen bg-background">
-        <Navigation />
-        <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-16 text-center">
-          <h1 className="text-4xl font-serif text-foreground mb-4">Post Not Found</h1>
-          <p className="text-muted-foreground">The blog post you're looking for doesn't exist.</p>
-        </div>
-      </main>
-    )
+    redirect('/blog')
   }
 
   return (
