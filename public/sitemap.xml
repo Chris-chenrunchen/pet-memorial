@@ -65,13 +65,7 @@
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
-  
-  <url>
-    <loc>https://petheaven.top/blog/memorial-for-a-pet</loc>
-    <lastmod>2025-10-04</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
+
   
   <url>
     <loc>https://petheaven.top/blog/pet-memorial-stones</loc>
@@ -80,19 +74,7 @@
     <priority>0.8</priority>
   </url>
   
-  <url>
-    <loc>https://petheaven.top/blog/pet-memorial-ideas</loc>
-    <lastmod>2025-10-04</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
   
-  <url>
-    <loc>https://petheaven.top/blog/pet-memorial-gifts</loc>
-    <lastmod>2025-10-04</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
   
   <url>
     <loc>https://petheaven.top/blog/pet-memorial</loc>
@@ -114,53 +96,5 @@
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
-  
-  <url>
-    <loc>https://petheaven.top/blog/pet-memorial-rock</loc>
-    <lastmod>2025-10-04</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  
-  <url>
-    <loc>https://petheaven.top/blog/pet-memorial-services</loc>
-    <lastmod>2025-10-04</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  
-  <url>
-    <loc>https://petheaven.top/blog/dog-pet-memorial-stones</loc>
-    <lastmod>2025-10-04</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  
-  <url>
-    <loc>https://petheaven.top/blog/pet-memorial-stones-for-dogs</loc>
-    <lastmod>2025-10-04</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  
-  <url>
-    <loc>https://petheaven.top/blog/pet-memorial-stone</loc>
-    <lastmod>2025-10-04</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  
-  <url>
-    <loc>https://petheaven.top/blog/eternity-pet-memorial</loc>
-    <lastmod>2025-10-04</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  
-  <url>
-    <loc>https://petheaven.top/blog/lasting-paws-pet-memorial-services</loc>
-    <lastmod>2025-10-04</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
+
 </urlset>
